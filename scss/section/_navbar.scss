@@ -3,12 +3,13 @@
   /* box-shadow: 0 0 16px 4px rgba(36, 47, 95, 0.1); */
   .navbar-brand.logo {
     font-size: 1.5rem;
+    text-transform: uppercase;
     color: $black;
     img {
       width: 6rem;
     }
   }
-  .dropdown-item{
+  .dropdown-item {
     text-transform: uppercase;
   }
   .nav-item {
@@ -16,10 +17,10 @@
     .nav-link {
       font-size: $small-font-size;
       text-transform: uppercase;
-      &::before {        
+      &::before {
         content: "";
         width: 0;
-        border-bottom: 2px solid $primary;
+
         border-radius: 2px;
         position: absolute;
         bottom: 0.25rem;
@@ -37,14 +38,14 @@
     &.active {
       .nav-link {
         color: $primary;
-        &::before {        
+        &::before {
           width: 60%;
         }
       }
     }
     &.btn-order {
       @extend .btn-primary;
-       & > a{
+      & > a {
         color: $white;
       }
     }
@@ -79,9 +80,9 @@
     width: 3rem;
     text-align: center;
     margin: 0;
-    color: $white;
-    background-color: $primary;
-    border-radius: 50%;
+    color: #000;
+    background-color: transparent;
+
     box-sizing: border-box;
     position: absolute;
     right: 4px;
@@ -105,7 +106,7 @@
     font-size: 1.25em;
     line-height: 0.05em;
     vertical-align: -0.075em;
-    color: $primary;
+    color: #000;
   }
 
   &:focus {
@@ -264,7 +265,7 @@
     margin-bottom: 0;
   }
 }
-.fixed-top.navbar-expand-xl + .content{
+.fixed-top.navbar-expand-xl + .content {
   padding-top: 4.125rem;
 }
 @media screen and (min-width: 1200px) {
@@ -278,7 +279,32 @@
       padding-right: 0;
     }
   }
-  .fixed-top.navbar-expand-xl + .content{
+  .fixed-top.navbar-expand-xl + .content {
     padding-top: 6.25rem;
+  }
+}
+
+.btn-burger {
+  width: 2.625rem;
+  position: relative;
+  cursor: pointer;
+  margin-left: 1.25rem;
+  transform: rotate(180deg);
+  span {
+    height: 0.1rem;
+    background-color: #000;
+    border-radius: 2px;
+    display: block;
+    &:nth-child(1) {
+      width: 60%;
+    }
+    &:nth-child(2) {
+      width: 100%;
+      margin-top: 0.3rem;
+    }
+    &:last-child {
+      width: 100%;
+      margin-top: 0.3rem;
+    }
   }
 }
