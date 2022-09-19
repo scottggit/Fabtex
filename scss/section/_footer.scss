@@ -1,6 +1,9 @@
 footer {
-  li {
-    list-style: none;
+  ul {
+    padding-left: 0;
+    li {
+      list-style: none;
+    }
   }
   @media screen and (min-width: 768px) {
     .nav-footer {

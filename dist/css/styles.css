@@ -25725,7 +25725,10 @@ a.text-primary {
   margin-top: 0.3rem;
 }
 
-footer li {
+footer ul {
+  padding-left: 0;
+}
+footer ul li {
   list-style: none;
 }
 @media screen and (min-width: 768px) {
