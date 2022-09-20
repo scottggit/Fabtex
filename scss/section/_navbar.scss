@@ -308,3 +308,26 @@
     }
   }
 }
+
+.redtext {
+  color: #f15d22 !important;
+}
+
+.navbar {
+  .nav-link.active {
+    font-weight: bold;
+    position: relative;
+    &:before {
+      content: "";
+      border: 1px solid #f15d22;
+      border-radius: 100% !important;
+      width: 0.2rem !important;
+      height: 0.2rem !important;
+      background-color: #f15d22;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -0);
+    }
+  }
+}

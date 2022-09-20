@@ -36,3 +36,76 @@
     }
   }
 }
+
+.contact-form {
+  background: url(../img/form-background.png);
+  background-repeat: no-repeat;
+  background-size: cover !important;
+}
+
+.contact-wrap {
+  @media screen and (min-width: 1200px) {
+    min-height: 40rem;
+    padding-left: 6rem;
+  }
+}
+
+.newsletter-wrap {
+  padding: 5rem;
+  background: url(../img/black-pattern.jpg);
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  form {
+    position: relative;
+  }
+  input {
+    appearance: none;
+    width: 100%;
+    border-radius: 50px;
+    padding: 1rem 2rem;
+  }
+  button {
+    background-color: #f15d22;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 60%;
+
+    transform: translate(-10%, -50%);
+    padding: 0 2rem;
+    transition: all 0.3s ease;
+  }
+}
+
+input[type="submit"] {
+  background-color: #f15d22;
+  border: 0;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  text-transform: uppercase;
+}
+input,
+textarea {
+  border-radius: 25px !important;
+  border: none !important;
+}
+.contact-form {
+  input {
+    margin-bottom: 1rem;
+  }
+  .file-drop-wrap {
+    input {
+      margin-bottom: 0;
+    }
+  }
+  input[type="submit"] {
+    float: right;
+    margin-top: -3rem;
+    margin-right: 0.5rem;
+  }
+}

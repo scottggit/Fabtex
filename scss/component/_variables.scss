@@ -1,7 +1,7 @@
-$font-family-base: "avenir-regular";
-$font-family-base-bold: "avenir-regular";
-$font-family-heading: "feelthat-regular";
-$font-family-long: "feelthat-regular";
+$font-family-base: "proxima";
+$font-family-base-bold: "proxima";
+$font-family-heading: "chapaza";
+$font-family-long: "proxima";
 $font-family-noir: "noir";
 $font-size-base: 1rem;
 $line-height-base: 1.5;
@@ -24,7 +24,7 @@ $secondary: $blue;
 
 $body-color: #647374;
 $sub-header-color: #334748;
-$main-header-color: #202629;
+$main-header-color: #272830;
 
 $headings-font-family: $font-family-heading;
 $headings-color: $main-header-color;
@@ -51,7 +51,7 @@ $display-font-sizes: (
   //56
   5: 2.81rem,
   //45
-  6: 1.125rem //18,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+  6: 1.125rem //18,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 );
 
 $link-decoration: none;
