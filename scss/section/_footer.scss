@@ -27,7 +27,7 @@ footer {
 
   .fa-brands {
     border-radius: 50%;
-    padding: 1rem;
+    padding: 0.5rem 0.6rem;
     background: #c7c7c9;
     color: #fff;
   }
@@ -35,6 +35,14 @@ footer {
   .social-nav {
     li {
       margin: 0 0.5rem;
+    }
+  }
+}
+
+footer {
+  li {
+    a {
+      color: #262831;
     }
   }
 }
