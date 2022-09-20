@@ -26,7 +26,7 @@ $(".blog_slick").slick({
   ],
 });
 
-$(".testimonial_slick").slick({
+$(".clients_slick").slick({
   slidesToShow: 3,
   responsive: [
     {

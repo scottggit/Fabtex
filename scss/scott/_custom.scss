@@ -1,0 +1,38 @@
+.video-w-poster::after {
+  content: "";
+  background-color: transparent;
+  background-image: url(../img/icon-play.svg);
+  background-size: 5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  inset: 0;
+}
+.video-w-poster {
+  position: relative;
+  display: block;
+}
+.card-footer {
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 3rem;
+  img {
+    height: 2rem;
+  }
+}
+.my-custom-nav {
+  &.custom_nav_container {
+    display: block;
+  }
+}
+
+.clients_slick {
+  .client-item {
+    border-radius: 5px;
+    .card-footer {
+      border-radius: 0px 0 10px 10px;
+    }
+  }
+}
