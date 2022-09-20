@@ -25927,13 +25927,17 @@ textarea {
   margin-right: 0.5rem;
 }
 
+h1 .underlined::before, .h1 .underlined::before {
+  bottom: 1.5rem;
+}
+
 .underlined {
   position: relative;
 }
 .underlined::before {
   content: "";
   position: absolute;
-  bottom: 10px;
+  bottom: 1rem;
   left: 0;
   border-bottom: 3px solid #f15d22;
   width: 100%;

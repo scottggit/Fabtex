@@ -27,7 +27,9 @@ $(".blog_slick").slick({
 });
 
 $(".clients_slick").slick({
-  slidesToShow: 3,
+  slidesToShow: 3.1,
+  centerMode: true,
+  centerPadding: "40px",
   responsive: [
     {
       breakpoint: 992,
