@@ -25806,6 +25806,13 @@ footer li a {
   position: relative;
   display: block;
 }
+@media screen and (min-width: 1200px) {
+  .video-w-poster img {
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+  }
+}
 
 .card-footer {
   background: #000;
@@ -25855,11 +25862,18 @@ footer li a {
   background-repeat: no-repeat;
   background-size: cover !important;
   border-radius: 20px;
+  padding-left: 2rem;
+  min-height: 40rem;
 }
 @media screen and (min-width: 1200px) {
   .contact-form .contact-wrap {
     min-height: 40rem;
     padding-left: 5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact-form .contact-wrap {
+    padding-left: 0rem;
   }
 }
 
@@ -25976,6 +25990,7 @@ h1 .underlined::before, .h1 .underlined::before {
   position: fixed;
   right: 0;
   top: 40%;
+  z-index: 9999;
   transform: translate(34%, 0px);
   color: #fff;
 }
@@ -26046,6 +26061,88 @@ h1 .underlined::before, .h1 .underlined::before {
   width: 7rem;
   border-bottom: 2px solid #f15d22;
   border-radius: 0px 0px 20px 0px;
+}
+
+@media screen and (min-width: 1200px) {
+  .banner-desc {
+    margin-bottom: 5rem;
+  }
+}
+
+.hero-banner .video-container {
+  position: relative;
+}
+.hero-banner .video-container .floating-line1 {
+  position: absolute;
+  width: 45rem;
+  right: 100%;
+  top: 66%;
+}
+@media screen and (max-width: 1200px) {
+  .hero-banner .video-container .floating-line1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .hero-banner .video-container .floating-line1 {
+    width: 39rem;
+  }
+}
+.hero-banner .video-container .floating-line1 img {
+  width: 100%;
+}
+
+.fabric-chooser-wrap {
+  position: relative;
+}
+.fabric-chooser-wrap .floating-line-3 {
+  position: absolute;
+  width: 60rem;
+  left: -5rem;
+  top: 100%;
+}
+@media screen and (max-width: 1200px) {
+  .fabric-chooser-wrap .floating-line-3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .fabric-chooser-wrap .floating-line-3 {
+    width: 39rem;
+  }
+}
+.fabric-chooser-wrap .floating-line-3 img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+  .social-nav {
+    margin: 1.5rem 0;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .copyright {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .nav-footer {
+    padding-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  footer .nav-footer li a {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer .nav-footer li {
+    border-right: 0;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

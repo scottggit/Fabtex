@@ -11,6 +11,13 @@
 .video-w-poster {
   position: relative;
   display: block;
+  @media screen and (min-width: 1200px) {
+    img {
+      height: 30rem;
+      object-fit: cover;
+      border-radius: 20px 0px 0px 20px;
+    }
+  }
 }
 .card-footer {
   background: #000;
@@ -64,9 +71,14 @@
     background-repeat: no-repeat;
     background-size: cover !important;
     border-radius: 20px;
+    padding-left: 2rem;
+    min-height: 40rem;
     @media screen and (min-width: 1200px) {
       min-height: 40rem;
       padding-left: 5rem;
+    }
+    @media screen and (max-width: 768px) {
+      padding-left: 0rem;
     }
   }
 }
@@ -192,6 +204,7 @@ h1 {
   position: fixed;
   right: 0;
   top: 40%;
+  z-index: 9999;
 
   transform: translate(34%, -0px);
   color: #fff;
@@ -262,4 +275,77 @@ h1 {
   width: 7rem;
   border-bottom: 2px solid #f15d22;
   border-radius: 0px 0px 20px 0px;
+}
+
+.banner-desc {
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 5rem;
+  }
+}
+.hero-banner {
+  .video-container {
+    position: relative;
+    .floating-line1 {
+      @media screen and (max-width: 1200px) {
+        display: none;
+      }
+      @media screen and (max-width: 1400px) {
+        width: 39rem;
+      }
+      position: absolute;
+      width: 45rem;
+      right: 100%;
+      top: 66%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.fabric-chooser-wrap {
+  position: relative;
+  .floating-line-3 {
+    @media screen and (max-width: 1200px) {
+      display: none;
+    }
+    @media screen and (max-width: 1400px) {
+      width: 39rem;
+    }
+    position: absolute;
+    width: 60rem;
+    left: -5rem;
+    top: 100%;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.social-nav {
+  @media screen and (max-width: 1400px) {
+    margin: 1.5rem 0;
+  }
+}
+
+.copyright {
+  @media screen and (max-width: 1400px) {
+    text-align: left;
+  }
+}
+.nav-footer {
+  @media screen and (max-width: 1400px) {
+    padding-top: 1rem;
+  }
+}
+footer .nav-footer li a {
+  @media screen and (max-width: 1400px) {
+    padding-left: 0;
+  }
+}
+
+footer .nav-footer li {
+  @media screen and (max-width: 768px) {
+    border-right: 0;
+  }
 }
